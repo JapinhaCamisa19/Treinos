@@ -1,4 +1,4 @@
-/* Estilos gerais */
+/* Importação da Fonte */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -18,33 +18,39 @@ body {
     height: auto;
 }
 
-/* Menu */
+/* Menu Fixo */
 .menu {
     display: flex;
     justify-content: center;
     background-color: #222;
-    padding: 10px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .menu .botao {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 0 10px;
     background-color: #f78889;
     border-radius: 5px;
     transition: 0.3s;
+    font-weight: 600;
 }
 
 .menu .botao:hover {
     background-color: #8ccef7;
+    transform: scale(1.1);
 }
 
 /* Seção Tipos de Treinos */
 .sobre {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
+/* Cards de Treino */
 .categorias {
     display: flex;
     justify-content: center;
@@ -56,13 +62,41 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Efeito Hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
 footer {
     background: #222;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
 }
+.card{
+    text-decoration: none;
+     color: inherit;
+ }
