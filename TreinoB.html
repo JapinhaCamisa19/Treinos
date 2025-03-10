@@ -13,7 +13,20 @@
         <img src="img/bannerTreinoB.png" alt="Banner Treino B">
     </div>
 </header>
+<p class="pausa">Depois de realizar cada exercício, faça uma pausa de 30 segundos.</p>
 
+<button onclick="iniciarPausa()">Finalizar Exercício</button>
+<p id="contador"></p>
+
+<script>
+    function iniciarPausa() {
+        document.getElementById("contador").innerText = "Pausa de 30 segundos...";
+        setTimeout(() => {
+            alert("Pausa finalizada! Pode continuar.");
+            document.getElementById("contador").innerText = "";
+        }, 30000);
+    }
+</script>
 <div class="pai">
     <div class="video">
         <h3>Supino Inclinado - 3x12</h3>

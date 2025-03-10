@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treino A - Costa</title>
+  <title>Treino D - Costa</title>
   <link rel="stylesheet" href="css/TreinoD.css">
 </head>
 <body>
@@ -15,7 +15,20 @@
   </div>
 
 </header>
+<p class="pausa">Depois de realizar cada exercício, faça uma pausa de 30 segundos.</p>
 
+<button onclick="iniciarPausa()">Finalizar Exercício</button>
+<p id="contador"></p>
+
+<script>
+  function iniciarPausa() {
+    document.getElementById("contador").innerText = "Pausa de 30 segundos...";
+    setTimeout(() => {
+      alert("Pausa finalizada! Pode continuar.");
+      document.getElementById("contador").innerText = "";
+    }, 30000);
+  }
+</script>
 
 <div class="pai">
   <div class="video">
