@@ -92,3 +92,19 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+.botoes-treinos {
+    margin: 20px 0;
+}
+
+.botoes-treinos a {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botoes-treinos a:hover {
+    background-color: #444;
+}
